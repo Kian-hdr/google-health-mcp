@@ -28,9 +28,9 @@
     "test": "npm run build && node --test dist/test/*.test.js"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "1.30.0",
+    "@modelcontextprotocol/sdk": "1.32.2",
     "google-auth-library": "10.3.0",
-    "zod": "3.25.76"
+    "zod": "4.6.7"
   },
   "devDependencies": {
     "@types/node": "22.19.19",

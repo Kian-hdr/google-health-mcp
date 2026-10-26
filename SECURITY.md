@@ -7,3 +7,5 @@ The OAuth helper binds to loopback, validates Host/state/method, uses PKCE and a
 Use a system browser for Google authorization. This local template is not a ready-made public HTTP service. A hosted adaptation needs its own authenticated transport, per-user isolation and secure credential storage. Never expose the callback or a personal token store through a reverse proxy.
 
 Tests use synthetic tokens/records only. They do not certify medical accuracy or regulatory compliance. For public bug reports, use a synthetic reproduction and a safe error code, without account identifiers, tokens or health records.
+
+The template pins the patched MCP SDK1.32.2 and Zod4.6.7. CI checks runtime dependencies for high-severity advisories; keep the lockfile and supported maintenance releases current.
