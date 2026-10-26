@@ -1,0 +1,39 @@
+{
+  "name": "google-health-mcp-template",
+  "version": "0.2.0",
+  "description": "Unofficial reusable Google Health read-only client, MCP server and OAuth setup template",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/src/client.d.ts",
+      "import": "./dist/src/client.js"
+    },
+    "./mcp": {
+      "types": "./dist/src/mcp.d.ts",
+      "import": "./dist/src/mcp.js"
+    }
+  },
+  "bin": {
+    "google-health-mcp": "dist/src/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node --env-file=.env dist/src/index.js",
+    "auth": "node --env-file=.env dist/src/auth.js",
+    "test": "npm run build && node --test dist/test/*.test.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "google-auth-library": "10.3.0",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.19",
+    "typescript": "5.9.3"
+  }
+}
