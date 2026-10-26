@@ -113,3 +113,13 @@ test("account linkage is verified before tokens are persisted", async()=>{
     assert.ok(!(await readFile(path,"utf8")).includes("syntheticLinked"));
   } finally {await rm(root,{recursive:true,force:true});}
 });
+
+test("newly authorized token is usable after an earlier missing-connection result",async()=>{
+  const root=await mkdtemp(join(tmpdir(),"health-new-authorization-"));const path=join(root,"tokens.json");
+  const provider=createTokenProvider({GOOGLE_HEALTH_TOKEN_PATH:path,GOOGLE_CLIENT_ID:"synthetic-id",GOOGLE_CLIENT_SECRET:"synthetic-secret"});
+  try {
+    await assert.rejects(provider(),(e:any)=>e.code==="CONNECT_GOOGLE_REQUIRED");
+    await saveTokens({access_token:"synthetic-current",expiry_date:Date.now()+3_600_000},path);
+    assert.equal(await provider(),"synthetic-current");
+  } finally {await rm(root,{recursive:true,force:true});}
+});

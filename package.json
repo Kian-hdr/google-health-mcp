@@ -1,6 +1,6 @@
 {
   "name": "google-health-mcp-template",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Unofficial reusable Google Health read-only client, MCP server and OAuth setup template",
   "private": true,
   "license": "MIT",

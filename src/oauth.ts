@@ -88,13 +88,21 @@ export function createTokenProvider(env: NodeJS.ProcessEnv = process.env): () =>
     return configured;
   }
   return async () => {
+    const pending = initialization ??= initialize();
     try {
-      const auth = await (initialization ??= initialize());
+      const auth = await pending;
       const result = await auth.getAccessToken();
       await persistence;
       if (!result.token) throw new ConnectionError("INVALID_TOKEN_RESPONSE", 502);
       return result.token;
-    } catch (error) { throw oauthFailure(error); }
+    } catch (error) {
+      const failure = oauthFailure(error);
+      if (initialization === pending && ["CONNECT_GOOGLE_REQUIRED", "RECONNECT_REQUIRED", "SETUP_REQUIRED"].includes(failure.code)) {
+        initialization = undefined;
+        if (failure.code === "SETUP_REQUIRED") persistence = Promise.resolve();
+      }
+      throw failure;
+    }
   };
 }
 

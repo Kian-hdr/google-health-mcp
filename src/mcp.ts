@@ -11,7 +11,7 @@ function json(value: unknown) {
 }
 
 export function createServer(health: GoogleHealthClient): McpServer {
-const server = new McpServer({ name: "google-health-mcp", version: "0.2.0" });
+const server = new McpServer({ name: "google-health-mcp", version: "0.2.1" });
 
 const CORE_METRICS = ["steps", "distance", "total-calories", "active-energy-burned", "heart-rate", "sleep", "weight", "body-fat"];
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
