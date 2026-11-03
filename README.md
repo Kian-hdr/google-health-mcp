@@ -4,6 +4,10 @@ An unofficial, reusable starting point for connecting your own Google Health acc
 
 **[Use this template](https://github.com/Kian-hdr/google-health-mcp/generate)** · [Setup](docs/SETUP.md) · [Security and privacy](SECURITY.md) · [Upstream attribution](ATTRIBUTION.md)
 
+[![Download template ZIP · Preview](https://img.shields.io/badge/Download%20template%20ZIP%20%C2%B7%20Preview-24292F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Kian-hdr/google-health-mcp/releases/download/v0.2.1/google-health-mcp_0.2.1.zip)
+
+[Download preview ZIP](https://github.com/Kian-hdr/google-health-mcp/releases/download/v0.2.1/google-health-mcp_0.2.1.zip) · [Preview release notes](https://github.com/Kian-hdr/google-health-mcp/releases/tag/v0.2.1)
+
 ## Start here
 
 Requires Node.js 22.13 or newer and npm. Use your own Google Cloud project, OAuth client and Google Health account. The template includes no working credentials or personal health records.
