@@ -2,11 +2,17 @@
 
 An unofficial, reusable starting point for connecting your own Google Health account to an MCP client or TypeScript application. One repository contains the shared API client, 17 read-only MCP tools, local OAuth setup, analytics, and synthetic tests.
 
+## Download
+
+<p>
+<a href="https://github.com/Kian-hdr/google-health-mcp/releases/download/v0.2.1/google-health-mcp_0.2.1.zip"><img src="docs/assets/downloads/download_1.svg" width="240" height="48" alt="Download ZIP"></a>
+</p>
+
+[template ZIP · Preview · v0.2.1](https://github.com/Kian-hdr/google-health-mcp/releases/download/v0.2.1/google-health-mcp_0.2.1.zip)
+
+[Preview release notes](https://github.com/Kian-hdr/google-health-mcp/releases/tag/v0.2.1)
+
 **[Use this template](https://github.com/Kian-hdr/google-health-mcp/generate)** · [Setup](docs/SETUP.md) · [Security and privacy](SECURITY.md) · [Upstream attribution](ATTRIBUTION.md)
-
-[![Download template ZIP · Preview](https://img.shields.io/badge/Download%20template%20ZIP%20%C2%B7%20Preview-24292F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Kian-hdr/google-health-mcp/releases/download/v0.2.1/google-health-mcp_0.2.1.zip)
-
-[Download preview ZIP](https://github.com/Kian-hdr/google-health-mcp/releases/download/v0.2.1/google-health-mcp_0.2.1.zip) · [Preview release notes](https://github.com/Kian-hdr/google-health-mcp/releases/tag/v0.2.1)
 
 ## Start here
 
