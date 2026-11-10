@@ -66,4 +66,4 @@ This is a local stdio template. Remote ChatGPT integrations need a separately se
 
 ## License and provenance
 
-MIT. Adapted from [rickygarim/fitbit-google-health-mcp](https://github.com/rickygarim/fitbit-google-health-mcp), preserving Rithvik Garimella's attribution, with client/error-handling and template improvements by Kian Konrad Tajbakhsh. Not affiliated with Google or Fitbit. See [ATTRIBUTION.md](ATTRIBUTION.md).
+MIT. Adapted from [rickygarim/fitbit-google-health-mcp](https://github.com/rickygarim/fitbit-google-health-mcp), preserving Rithvik Garimella's attribution, with client/error-handling and template improvements by Kian Konrad. Not affiliated with Google or Fitbit. See [ATTRIBUTION.md](ATTRIBUTION.md).
