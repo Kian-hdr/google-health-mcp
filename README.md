@@ -1,10 +1,8 @@
-# Google Health MCP template
+<p align="center"><strong>Google Health MCP template</strong></p>
 
 An unofficial, reusable starting point for connecting your own Google Health account to an MCP client or TypeScript application. One repository contains the shared API client, 17 read-only MCP tools, local OAuth setup, analytics, and synthetic tests.
 
-## Download
-
-<p>
+<p align="center">
 <a href="https://github.com/Kian-hdr/google-health-mcp/releases/download/v0.2.1/google-health-mcp_0.2.1.zip"><img src="docs/assets/downloads/download_1.svg" width="240" height="48" alt="Download ZIP"></a>
 </p>
 
